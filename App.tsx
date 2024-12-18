@@ -1,6 +1,5 @@
 import React from 'react';
 import {ThemeProvider} from './src/contextApi/appTheme';
-
 import {View} from 'react-native';
 import MainNavigation from './src/navigation/mainNavigation';
 
