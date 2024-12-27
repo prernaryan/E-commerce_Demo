@@ -7,6 +7,10 @@ import {
 
 export type RootStackParamList = {
   login: undefined;
+  onboarding: undefined;
+  landingScreen: undefined;
+  signup: undefined;
+  createPassword: undefined;
 };
 
 export type MainNavigationType = {

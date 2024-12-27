@@ -29,7 +29,7 @@ const MainNavigator = (): React.JSX.Element => {
   return (
     <NavigationContainer onReady={onReadyNavigation} ref={navigationRef}>
       <Stack.Navigator
-        initialRouteName={RouteName.LOGIN}
+        initialRouteName={RouteName.LANDING_SCREEN}
         screenOptions={{
           headerShown: false,
           gestureEnabled: false,

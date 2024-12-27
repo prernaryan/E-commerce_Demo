@@ -1,5 +1,6 @@
-import {DimensionValue, Dimensions} from 'react-native';
+import {DimensionValue, Dimensions, StyleSheet} from 'react-native';
 import {ConstNumber} from '../constants';
+import {Fonts} from '../constants/appConstants';
 
 export const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} =
   Dimensions.get('window');

@@ -8,6 +8,7 @@ export interface ThemeColors {
   gray: {
     deepGray: string;
     lightGray: string;
+    inputGray: string;
   };
   yellow: {
     pendingColor: string;
@@ -23,6 +24,7 @@ export interface ThemeColors {
     toggleButton: string;
   };
   transparent: string;
+  wrapper: string;
 }
 
 export const themes: {dark: ThemeColors; light: ThemeColors} = {
@@ -33,6 +35,7 @@ export const themes: {dark: ThemeColors; light: ThemeColors} = {
     shadowColor: 'rgba(88, 91, 93, 0.1)',
     white: '#ffffff',
     black: '#000000',
+    wrapper: '#00000077',
     gray: {
       deepGray: '#76777B',
       lightGray: '#1E1E1E',
@@ -62,6 +65,7 @@ export const themes: {dark: ThemeColors; light: ThemeColors} = {
     gray: {
       deepGray: '#76777B',
       lightGray: '#F5F5F5',
+      inputGray: '#E5EBFC',
     },
     yellow: {
       pendingColor: '#DCA900',
