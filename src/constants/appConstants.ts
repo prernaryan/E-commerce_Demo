@@ -17,3 +17,5 @@ export enum ModalAnimations {
   FADE_IN = 'fadeIn',
   FADE_OUT = 'fadeOut',
 }
+export const FLAG_CDN_URL = 'https://flagcdn.com/w80/';
+export const PNG_FORMAT = '.png';
