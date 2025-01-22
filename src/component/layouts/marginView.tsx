@@ -9,7 +9,14 @@ type marginSizeType = {
 export const MarginTopView = React.memo(
   (props: React.PropsWithChildren<marginSizeType>): React.JSX.Element => {
     const {children, size} = props;
-    return <View style={{marginTop: heightPixel(size)}}>{children}</View>;
+    return (
+      <View
+        style={{
+          marginTop: heightPixel(size),
+        }}>
+        {children}
+      </View>
+    );
   },
 );
 export const MarginLeftView = React.memo(

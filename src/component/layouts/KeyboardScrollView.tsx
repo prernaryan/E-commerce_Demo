@@ -6,14 +6,20 @@ import {ViewStyle} from 'react-native';
 type KeyboardScrollViewType = {
   children: React.ReactNode;
   extraStyle?: ViewStyle;
+  contentContainerStyle?: ViewStyle | ViewStyle[];
 };
 export const KeyboardScrollView = React.memo(
-  ({children, extraStyle}: KeyboardScrollViewType): React.JSX.Element => {
+  ({
+    children,
+    extraStyle,
+    contentContainerStyle,
+  }: KeyboardScrollViewType): React.JSX.Element => {
     return (
       <KeyboardAwareScrollView
         style={[StyleBase.flex1, extraStyle]}
         enableOnAndroid
         alwaysBounceHorizontal={false}
+        contentContainerStyle={contentContainerStyle}
         alwaysBounceVertical={false}
         extraScrollHeight={ConstNumber.VALUE_10}
         showsVerticalScrollIndicator={false}

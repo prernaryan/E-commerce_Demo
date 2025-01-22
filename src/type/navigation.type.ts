@@ -11,6 +11,14 @@ export type RootStackParamList = {
   landingScreen: undefined;
   signup: undefined;
   createPassword: undefined;
+  forgotPassword: undefined;
+  otpScreen: undefined;
+  confirmPassword: undefined;
+  dashboard: undefined;
+  favourite: undefined;
+  cardScreen: undefined;
+  profile: undefined;
+  languageSelect: undefined;
 };
 
 export type MainNavigationType = {

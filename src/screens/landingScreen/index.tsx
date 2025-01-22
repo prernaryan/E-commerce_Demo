@@ -20,6 +20,7 @@ import AppButton from '../../component/resuableComponent/appButton';
 import HorizontalWithIcon from '../../component/resuableComponent/horizontalWithIcon';
 import {navigate} from '../../services/navigationService';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {useTranslation} from 'react-i18next';
 const BagContainer = () => {
   return (
     <View style={styles.bagStyle}>
@@ -29,22 +30,23 @@ const BagContainer = () => {
 };
 const LandingScreen = () => {
   const {top, bottom} = useSafeAreaInsets();
+  const {t} = useTranslation();
   return (
     <View style={[styles.container, {paddingTop: top}]}>
       <View style={styles.innerContainer}>
         <BagContainer />
-        <AppText style={styles.title}>{texts.Shoppe}</AppText>
-        <AppText style={styles.subTitle}>{texts.landing_subtitle}</AppText>
+        <AppText style={styles.title}>{t(texts.Shoppe)}</AppText>
+        <AppText style={styles.subTitle}>{t(texts.landing_subtitle)}</AppText>
       </View>
       <View
         style={[styles.btnContainer, {marginBottom: bottom + heightPixel(55)}]}>
         <AppButton
           onPress={() => navigate(RouteName.SIGNUP)}
-          title={texts.started_button}
+          title={t(texts.started_button)}
           style={styles.button}
         />
         <HorizontalWithIcon
-          title={texts.not_have_accnt}
+          title={t(texts.not_have_accnt)}
           style={styles.rowwithIcon}
         />
       </View>

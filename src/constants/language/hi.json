@@ -1,0 +1,30 @@
+{
+  "translation": {
+    "HI": "नमस्ते",
+    "HELLO": "हैलो",
+    "GOOD_TO_SEE": "आपको फिर से देखकर अच्छा लगा!",
+    "LOGIN_HEADING": "लॉगिन",
+    "CREATE_ACCOUNT": "खाता बनाएं",
+    "CREATE_ACCOUNT_HEADING": "नमस्ते, रोमिना!!",
+    "TYPE_PASSWORD": "अपना पासवर्ड टाइप करें",
+    "FORGOT_PASSWORD": "क्या आप पासवर्ड भूल गए हैं?",
+    "Shoppe": "दुकान",
+    "landing_subtitle": "आपके ऑनलाइन स्टोर के लिए सुंदर ईकॉमर्स UI किट",
+    "started_button": "शुरू करें",
+    "not_have_accnt": "क्या आपके पास खाता नहीं है?",
+    "not_you": "आप नहीं?",
+    "ok": "ठीक है",
+    "search": "खोजें",
+    "done": "हो गया",
+    "noAvaiable": "उपलब्ध नहीं",
+    "cancel": "रद्द करें",
+    "password": "पासवर्ड",
+    "fullName": "पूरा नाम",
+    "yourNumber": "आपका नंबर",
+    "email": "ईमेल",
+    "login": "लॉग इन करें",
+    "forgotPassword": "पासवर्ड भूल गए",
+    "PASSWORD_RECOVERY": "पासवर्ड रिकवरी",
+    "RESTORE_PASSWORD": "आप अपना पासवर्ड कैसे पुनः प्राप्त करना चाहेंगे?"
+  }
+}

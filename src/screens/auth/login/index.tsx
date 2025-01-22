@@ -1,7 +1,7 @@
-import {StyleSheet, View} from 'react-native';
+import {View} from 'react-native';
 import React from 'react';
 import AppBgImage from '../../../component/resuableComponent/appBgImage';
-import {images, RouteName} from '../../../constants';
+import {images, RouteName, texts} from '../../../constants';
 import {AppText} from '../../../component/resuableComponent/appText';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import fonts from '../../../constants/fonts';
@@ -11,10 +11,12 @@ import AppButton from '../../../component/resuableComponent/appButton';
 import {fontPixel, SCREEN_WIDTH} from '../../../utils/responsive';
 import AppPressable from '../../../component/resuableComponent/appPressable';
 import {navigate} from '../../../services/navigationService';
+import {styles} from './styles';
+import {useTranslation} from 'react-i18next';
 
 const Login = () => {
   const {top, bottom} = useSafeAreaInsets();
-
+  const {t} = useTranslation();
   return (
     <AppBgImage source={images.loginBg}>
       <View
@@ -25,13 +27,13 @@ const Login = () => {
           marginTop: top + 394,
         }}>
         <View>
-          <AppText style={styles.title}>Login</AppText>
+          <AppText style={styles.title}>{t(texts.LOGIN_HEADING)} </AppText>
           <HorizontalWithIcon
-            title="Good to see you back!"
+            title={t(texts.GOOD_TO_SEE)}
             source={images.heart}
           />
           <CustomInput
-            placeholder="Email"
+            placeholder={t(texts.email)}
             value={''}
             onChange={() => {}}
             containerStyle={styles.inputBox}
@@ -39,7 +41,7 @@ const Login = () => {
         </View>
         <View style={{marginTop: 40, bottom: bottom + 53}}>
           <AppButton
-            title={'Done'}
+            title={t(texts.done)}
             style={{
               borderRadius: 16,
               width: SCREEN_WIDTH - 40,
@@ -55,7 +57,7 @@ const Login = () => {
                 fontFamily: fonts.Poppins.Light,
                 fontSize: fontPixel(15),
               }}>
-              Cancel
+              {t(texts.cancel)}
             </AppText>
           </AppPressable>
         </View>
@@ -65,20 +67,3 @@ const Login = () => {
 };
 
 export default Login;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    backgroundColor: 'white',
-  },
-  title: {
-    fontSize: 52,
-    fontFamily: fonts.Raleway.Bold,
-    color: 'black',
-    marginBottom: 4,
-  },
-  inputBox: {
-    marginTop: 17,
-  },
-});

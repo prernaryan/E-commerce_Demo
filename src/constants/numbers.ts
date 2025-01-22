@@ -107,6 +107,7 @@ export enum ConstNumber {
   VALUE_253 = 253,
   VALUE_103 = 103,
   VALUE_104 = 104,
+  VALUE_112 = 112,
   VALUE_115 = 115,
   VALUE_117 = 117,
   VALUE_118 = 118,

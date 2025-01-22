@@ -1,0 +1,30 @@
+{
+  "translation": {
+    "HI": "Salut",
+    "HELLO": "Bonjour",
+    "GOOD_TO_SEE": "Content de vous revoir !",
+    "LOGIN_HEADING": "Connexion",
+    "CREATE_ACCOUNT": "Créer un compte",
+    "CREATE_ACCOUNT_HEADING": "Bonjour, Romina!!",
+    "TYPE_PASSWORD": "Tapez votre mot de passe",
+    "FORGOT_PASSWORD": "Mot de passe oublié ?",
+    "Shoppe": "Boutique",
+    "landing_subtitle": "Superbe kit UI e-commerce pour votre boutique en ligne",
+    "started_button": "Commençons",
+    "not_have_accnt": "Vous n'avez pas de compte ?",
+    "not_you": "Ce n'est pas vous ?",
+    "ok": "Ok",
+    "search": "Rechercher",
+    "done": "Terminé",
+    "noAvaiable": "Non disponible",
+    "cancel": "Annuler",
+    "password": "Mot de passe",
+    "fullName": "Nom complet",
+    "yourNumber": "Votre numéro",
+    "email": "Email",
+    "login": "Se connecter",
+    "forgotPassword": "Mot de passe oublié",
+    "PASSWORD_RECOVERY": "Récupération du mot de passe",
+    "RESTORE_PASSWORD": "Comment souhaitez-vous restaurer votre mot de passe ?"
+  }
+}

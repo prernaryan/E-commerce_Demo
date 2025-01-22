@@ -33,15 +33,17 @@ import {
   PNG_FORMAT,
 } from '../../../constants/appConstants';
 import AppButton from '../../../component/resuableComponent/appButton';
-import {navigate} from '../../../services/navigationService';
+import {goBack, navigate} from '../../../services/navigationService';
 import {AppText} from '../../../component/resuableComponent/appText';
 
 import BottomSheetComp from '../../../component/layouts/bottomSheetComp';
 import {RBSheetRef} from '../../../component/layouts/rnBottomSheet';
 import {KeyboardScrollView} from '../../../component/layouts/KeyboardScrollView';
+import {useTranslation} from 'react-i18next';
 
 const SignUp = () => {
   const {top} = useSafeAreaInsets();
+  const {t} = useTranslation();
   const {colors} = useTheme();
   const bottomSheetRef = useRef<RBSheetRef>(null);
   const [selectedCountry, setSelectedCountry] =
@@ -71,6 +73,7 @@ const SignUp = () => {
     return (
       <>
         <AppPressable
+          key={item?.phone}
           onPress={() => {
             bottomSheetRef.current?.close();
             setSelectedCountry(item);
@@ -95,25 +98,25 @@ const SignUp = () => {
         <View style={[styles.innerContainer, {marginTop: top + 78}]}>
           <View style={styles.headingContainer}>
             <Text style={[styles.headingText, {color: colors.text}]}>
-              Create Account
+              {t(texts.CREATE_ACCOUNT)}
             </Text>
             <Image source={images.cameraIcon} />
           </View>
           <CustomInput
-            placeholder={texts.email}
+            placeholder={t(texts.email)}
             value={''}
             onChange={() => {}}
             containerStyle={styles.inputBox}
           />
           <CustomInput
-            placeholder={texts.password}
+            placeholder={t(texts.password)}
             secureTextEntry={true}
             value={''}
             containerStyle={styles.inputBox}
             onChange={() => {}}
           />
           <CustomInput
-            placeholder={texts.yourNumber}
+            placeholder={t(texts.yourNumber)}
             value={''}
             containerStyle={styles.inputBox}
             keyboardType={KEYBOARD_TYPE.NumberPad}
@@ -142,11 +145,11 @@ const SignUp = () => {
           />
           <AppButton
             onPress={() => navigate(RouteName.LOGIN)}
-            title={texts.done}
+            title={t(texts.done)}
             style={styles.button}
           />
-          <AppPressable>
-            <AppText style={styles.cancelBtn}>{texts.cancel}</AppText>
+          <AppPressable onPress={goBack}>
+            <AppText style={styles.cancelBtn}>{t(texts.cancel)}</AppText>
           </AppPressable>
         </View>
       </KeyboardScrollView>
@@ -165,7 +168,7 @@ const SignUp = () => {
           }
           value={search}
           onChange={setSearch}
-          placeholder={texts.search}
+          placeholder={t(texts.search)}
         />
         <ScrollView>
           {filterData.map(country => flagRenderItem({item: country}))}
