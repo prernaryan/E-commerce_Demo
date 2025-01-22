@@ -44,11 +44,12 @@ const styles = StyleSheet.create({
     flex: ConstNumber.VALUE_1,
     justifyContent: GlobalStyleValues.CENTER,
     alignItems: GlobalStyleValues.CENTER,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(14, 14, 14, 0.78)',
   },
   modalContent: {
     width: PercentageConstants.PERCENT_90,
     backgroundColor: 'white',
+
     borderRadius: widthPixel(ConstNumber.VALUE_16),
     paddingHorizontal: widthPixel(ConstNumber.VALUE_24),
     paddingTop: heightPixel(ConstNumber.VALUE_16),

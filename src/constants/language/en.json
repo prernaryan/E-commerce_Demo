@@ -1,0 +1,32 @@
+{
+    "translation": {
+        "HI": "Hi",
+        "HELLO": "Hello",
+        "GOOD_TO_SEE": "Good to see you back!",
+        "LOGIN_HEADING": "Login",
+        "CREATE_ACCOUNT": "Create Account",
+        "CREATE_ACCOUNT_HEADING": "Hello, Romina!!",
+        "TYPE_PASSWORD": "Type your password",
+        "FORGOT_PASSWORD": "Forget your pasword?",
+        "Shoppe":"Shoppe",
+        "landing_subtitle": "Beautiful eCommerce UI Kit for your online store",
+        "started_button": "Let's get started",
+        "not_have_accnt": "Don't have an account",
+        "not_you": "Not you?",
+        "ok": "Ok",
+        "search": "Search",
+        "done": "Done",
+        "noAvaiable": "Not Available",
+        "cancel": "Cancel",
+        "password": "Password",
+        "fullName": "Full Name",
+        "yourNumber": "Your Number",
+        "email": "Email",
+        "login": "Log In",
+        "forgotPassword": "Forgot Password",
+        "PASSWORD_RECOVERY": "Password Recovery",
+        "RESTORE_PASSWORD": "How would you like to restore your password?",
+        "ALERT_TEXT": "Please select one option",
+        "SMS": "SMS"
+   }
+  }
