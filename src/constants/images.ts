@@ -1,1 +1,19 @@
-export const images = {};
+export const images = {
+  DISCOUNT: require('../assets/images/discount/discount.png'),
+  SMALL_CROSS: require('../assets/images/smallCross/smallCross.png'),
+  CART: require('../assets/images/cart/cart.png'),
+  PROFILE_PIC: require('../assets/images/profilePic/profile.png'),
+  BELL_ICON: require('../assets/images/bellIcon/bell.png'),
+  SEARCH_ICON: require('../assets/images/searchIcon/searchIcon.png'),
+  CHILD_IMG: require('../assets/images/childImg/childImg.png'),
+  BACK_ARROW: require('../assets/images/backArrow/backArrow.png'),
+  GREY_HEART: require('../assets/images/greyHeart/greyHeart.png'),
+  STAR: require('../assets/images/star/star.png'),
+  BAG: require('../assets/images/cartBag/cartBag.png'),
+  MORE_ICON: require('../assets/images/moreIcon/moreIcon.png'),
+  BIN: require('../assets/images/bin/Bin.png'),
+  CAMERA: require('../assets/images/camera/camera.png'),
+  GALLERY_IMAGE: require('../assets/images/gallery/Gallery.png'),
+  GALLERY_CAMERA: require('../assets/images/galleryCamera/GalleryCamera.png'),
+  CROSS_ICON: require('../assets/images/crossIcon/crossIcon.png'),
+};

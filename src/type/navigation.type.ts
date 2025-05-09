@@ -7,6 +7,11 @@ import {
 
 export type RootStackParamList = {
   login: undefined;
+  notesList: undefined;
+  addProduct: undefined;
+  productList: undefined;
+  addToCart: undefined;
+  gallery: undefined;
 };
 
 export type MainNavigationType = {
