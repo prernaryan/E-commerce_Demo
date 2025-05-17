@@ -7,6 +7,8 @@ import {
 
 export type RootStackParamList = {
   login: undefined;
+  gallery: undefined;
+  modalScreen: undefined;
 };
 
 export type MainNavigationType = {

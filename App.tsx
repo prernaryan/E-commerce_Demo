@@ -1,16 +1,15 @@
 import React from 'react';
-import {ThemeProvider} from './src/contextApi/appTheme';
-
 import {View} from 'react-native';
 import MainNavigation from './src/navigation/mainNavigation';
+import {ImageProvider} from './src/contextApi/imageContext';
 
 const App = () => {
   return (
-    <ThemeProvider>
+    <ImageProvider>
       <View style={{flex: 1}}>
         <MainNavigation />
       </View>
-    </ThemeProvider>
+    </ImageProvider>
   );
 };
 

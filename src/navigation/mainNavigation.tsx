@@ -22,6 +22,11 @@ const MainNavigator = (): React.JSX.Element => {
         name={item}
         //@ts-ignore
         component={SCREENS[item]}
+        options={{
+          presentation:
+            item === RouteName.MODAL_SCREEN ? 'transparentModal' : 'card',
+          // animation: item === RouteName.LOGIN ? 'fade' : 'default',
+        }}
       />
     ));
   }, []);
@@ -29,7 +34,7 @@ const MainNavigator = (): React.JSX.Element => {
   return (
     <NavigationContainer onReady={onReadyNavigation} ref={navigationRef}>
       <Stack.Navigator
-        initialRouteName={RouteName.LOGIN}
+        initialRouteName={RouteName.GALLERY}
         screenOptions={{
           headerShown: false,
           gestureEnabled: false,
